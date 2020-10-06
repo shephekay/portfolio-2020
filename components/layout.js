@@ -18,8 +18,9 @@ function Layout({ children }) {
                     <div className="left">
                         <Link href='/'>
                             <a> 
-                                {/* <img src="/favicon.svg" />  */}
-                                Sheila Kelley
+                                {/* <img src="/favicon.svg"/> */}
+                                Sheila Kelley 
+                                
                             </a>
                         </Link>
                     </div>
