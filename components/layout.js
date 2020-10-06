@@ -1,9 +1,5 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import AppBar from '@material-ui/core/AppBar/AppBar'
-import Toolbar from '@material-ui/core/Toolbar/Toolbar'
-
-
 
 function Layout({ children }) {
 
@@ -18,26 +14,33 @@ function Layout({ children }) {
             />
         </Head>
 
-        <AppBar position="sticky">
-            <Toolbar>
-                
-                <nav>
-                    <Link href='/'>
-                        <a className="class">Home</a>
-                    </Link>
-                    <Link href='about'>
-                        <a>About</a>
-                    </Link>
-                    <Link href='/projects'>
-                        <a>Projects</a>
-                    </Link>
-                    <Link href='/contact'>
-                        <a>Contact</a>
-                    </Link>
+                <nav className="nav">
+                    <div className="left">
+                        <Link href='/'>
+                            <a> 
+                                {/* <img src="/favicon.svg" />  */}
+                                Sheila Kelley
+                            </a>
+                        </Link>
+                    </div>
+
+                    <div className="right">
+                        <Link href='/'>
+                            <a>Home</a>
+                        </Link>
+                        <Link href='about'>
+                            <a>About</a>
+                        </Link>
+                        <Link href='/projects'>
+                            <a>Projects</a>
+                        </Link>
+                        <Link href='/contact'>
+                            <a>Contact</a>
+                        </Link>
+                    </div>
                 </nav>
 
-            </Toolbar>
-        </AppBar>
+            
         <main>{children}</main>
         </>
     )
